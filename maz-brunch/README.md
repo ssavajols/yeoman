@@ -1,4 +1,4 @@
-# generator-maz-brunch [![Build Status](https://secure.travis-ci.org/ssavajols/generator-maz-brunch.png?branch=master)](https://travis-ci.org/ssavajols/generator-maz-brunch)
+# generator-maz-brunch
 
 A generator for [Yeoman](http://yeoman.io).
 
