@@ -23,14 +23,13 @@ MazBrunchGenerator.prototype.askFor = function askFor() {
   console.log(this.yeoman);
 
   var prompts = [{
-    type: 'confirm',
-    name: 'someOption',
-    message: 'Would you like to enable this option?',
-    default: true
+    name: 'public_path',
+    message: 'What is the public path ?',
+    default: "../public"
   }];
 
   this.prompt(prompts, function (props) {
-    this.someOption = props.someOption;
+    this.public_path = props.public_path;
 
     cb();
   }.bind(this));
@@ -38,10 +37,25 @@ MazBrunchGenerator.prototype.askFor = function askFor() {
 
 MazBrunchGenerator.prototype.app = function app() {
   this.mkdir('app');
-  this.mkdir('app/templates');
+  this.mkdir('app/controller');
+  this.mkdir('app/router');
+  this.mkdir('app/model');
+  this.mkdir('app/view');
+  this.mkdir('app/view/template');
+  this.mkdir('vendor');
+  this.mkdir('scss');
+  
+  this.copy('app/app.js', 'app.js');
+  this.copy('app/initialize.js', 'app/initialize.js');
 
+  this.template('config.rb', 'config.rb');
+  this.template('config.coffee', 'config.coffee');
+  
+  this.copy('watch.bat', 'watch.bat');
+  this.copy('compile.bat', 'compile.bat');
   this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  
+  this.write('scss/global.scss', '@import "compass/reset";');
 };
 
 MazBrunchGenerator.prototype.projectfiles = function projectfiles() {
