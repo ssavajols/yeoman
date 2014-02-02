@@ -42,10 +42,16 @@ MazBrunchGenerator.prototype.app = function app() {
   this.mkdir('app/model');
   this.mkdir('app/view');
   this.mkdir('app/view/template');
-  this.mkdir('vendor');
-  this.mkdir('scss');
   
-  this.copy('app/app.js', 'app.js');
+  this.mkdir('vendor');
+  
+  this.mkdir('scss');
+  this.mkdir('scss/partials');
+  this.mkdir('scss/vendor');
+  this.mkdir('scss/mixin');
+  this.mkdir('scss/page');
+  
+  this.copy('app/app.js', 'app/app.js');
   this.copy('app/initialize.js', 'app/initialize.js');
 
   this.template('config.rb', 'config.rb');
@@ -55,7 +61,14 @@ MazBrunchGenerator.prototype.app = function app() {
   this.copy('compile.bat', 'compile.bat');
   this.copy('_package.json', 'package.json');
   
-  this.write('scss/global.scss', '@import "compass/reset";');
+  this.copy('scss/_base.scss', 'scss/_base.scss');
+  this.copy('scss/globale.scss', 'scss/globale.scss');
+  this.write('scss/partials/_header.scss', '');
+  this.write('scss/partials/_layout.scss', '');
+  this.write('scss/partials/_footer.scss', '');
+  this.write('scss/mixin/_mixin.scss', '');
+  this.write('scss/vendor/_vendor.scss', '');
+  this.write('scss/page/_page.scss', '');
 };
 
 MazBrunchGenerator.prototype.projectfiles = function projectfiles() {

@@ -1,0 +1,18 @@
+// _base.scss
+// base file to set vars and compass module imports
+@import "base";
+
+// import library vendors
+@import "vendor/*";
+
+// import mixins
+@import "mixin/*";
+
+// import partials scss files like :
+// partials/_header.scss
+// partials/_layout.scss
+// partials/_footer.scss
+@import "partials/*";
+
+// import segmented by page scss files
+@import "page/*";

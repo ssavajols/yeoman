@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "appcache-brunch": "~1.7.1",
+    "auto-reload-brunch": "~1.7.1",
     "brunch": "*"
   }
 }
