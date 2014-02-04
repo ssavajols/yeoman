@@ -13,5 +13,5 @@ var ModelGenerator = module.exports = function ModelGenerator(args, options, con
 util.inherits(ModelGenerator, yeoman.generators.NamedBase);
 
 ModelGenerator.prototype.files = function files() {
-  this.template('model.js', 'model/'+_.slugify(this.name)+'.js');
+  this.template('model.js', 'model/'+this.name+'.js');
 };

@@ -1,21 +1,21 @@
 {
   "name": "generator-maz-brunch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/ssavajols/generator-maz-brunch",
-  "bugs": "https://github.com/ssavajols/generator-maz-brunch/issues",
+  "homepage": "https://github.com/ssavajols/yeoman/tree/master/maz-brunch",
+  "bugs": "https://github.com/ssavajols/yeoman/issues",
   "author": {
-    "name": "",
-    "email": "",
+    "name": "ssavajols",
+    "email": "s.savajols@gmail.com",
     "url": "https://github.com/ssavajols"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ssavajols/generator-maz-brunch.git"
+    "url": "https://github.com/ssavajols/yeoman.git"
   },
   "scripts": {
     "test": "mocha"
