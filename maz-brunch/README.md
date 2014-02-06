@@ -35,7 +35,7 @@ Finally, initiate the generator:
 $ yo maz-brunch
 ```
 
-Sub-generators:
+Sub-generators (scaffholding):
 
 ```
 $ yo maz-brunch:view "view_name"
