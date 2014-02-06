@@ -1,4 +1,4 @@
-var <%= _.slugfity(name) %> = Backbone.Router.extend({
+var <%= name %> = Backbone.Router.extend({
   routes: {
     "*actions": "action"
   },
@@ -7,4 +7,4 @@ var <%= _.slugfity(name) %> = Backbone.Router.extend({
   }
 });
 
-module.exports = <%= _.slugfity(name) %>;
+module.exports = <%= name %>;

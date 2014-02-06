@@ -13,5 +13,5 @@ var ScssPageGenerator = module.exports = function ScssPageGenerator(args, option
 util.inherits(ScssPageGenerator, yeoman.generators.NamedBase);
 
 ScssPageGenerator.prototype.files = function files() {
-  this.write('scss/page/_'+this.name+'.scss', '');
+  this.write('scss/page/_'+this.name+'.scss', '#'+this.name+"{\r\n}");
 };
