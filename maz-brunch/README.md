@@ -35,6 +35,16 @@ Finally, initiate the generator:
 $ yo maz-brunch
 ```
 
+Sub-generators:
+
+```
+$ yo maz-brunch:view "view_name"
+$ yo maz-brunch:model "model_name"
+$ yo maz-brunch:router "router_name"
+$ yo maz-brunch:controller "controller_name"
+$ yo maz-brunch:scss-page "scss_name"
+```
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.

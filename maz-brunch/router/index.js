@@ -13,5 +13,5 @@ var RouterGenerator = module.exports = function RouterGenerator(args, options, c
 util.inherits(RouterGenerator, yeoman.generators.NamedBase);
 
 RouterGenerator.prototype.files = function files() {
-  this.template('router.js', 'router/'+this.name+'.js');
+  this.template('router.js', 'app/router/'+this.name+'.js');
 };
