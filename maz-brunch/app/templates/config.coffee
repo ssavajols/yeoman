@@ -17,4 +17,4 @@ exports.config =
   plugins:
     imageoptimizer:
       smushit: false # if false it use jpegtran and optipng, if set to true it will use smushit
-      path: '<%= public_path %>/images' # your image path within your public folder
+      path: '<%= public_path %>' # your image path within your public folder
