@@ -44,6 +44,7 @@ MazBrunchGenerator.prototype.app = function app() {
   this.mkdir('app/view/template');
   
   this.mkdir('vendor');
+  this.mkdir('bin');
   
   this.mkdir('scss');
   this.mkdir('scss/partials');
@@ -60,6 +61,8 @@ MazBrunchGenerator.prototype.app = function app() {
   this.copy('watch.bat', 'watch.bat');
   this.copy('compile.bat', 'compile.bat');
   this.copy('_package.json', 'package.json');
+  this.copy('bin/optipng.exe', 'bin/optipng.exe');
+  this.copy('bin/jpegtran.exe', 'bin/jpegtran.exe');
   
   this.copy('scss/_base.scss', 'scss/_base.scss');
   this.copy('scss/globale.scss', 'scss/globale.scss');
