@@ -2,6 +2,45 @@
 
 A generator for [Yeoman](http://yeoman.io).
 
+## Before start
+
+Before start, we need to install ruby, sass and compass.
+
+### Ruby installation 
+
+First step, is to download and install ruby (Ruby must be added to PATH VARS ENVIRONNEMENT) : 
+
+[Ruby installer windows](http://rubyinstaller.org/downloads/)
+
+### Sass
+
+To install sass, execute the following command line :
+
+```
+$ gem install sass
+```
+  
+### Compass 
+
+To install compass, execute the following command line :
+
+```
+$ gem install compass
+```
+  
+### How to use brunch
+
+```
+# Start watcher :
+$ npm start
+# or 
+$ brunch w --server
+
+# Start builder :
+$ npm build
+# or
+$ brunch b
+```  
 
 ## Getting Started
 
