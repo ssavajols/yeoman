@@ -30,7 +30,7 @@ $ gem install compass
   
 ### How to use brunch
 
-```
+```javascript
 # Start watcher :
 $ npm start
 # or 
