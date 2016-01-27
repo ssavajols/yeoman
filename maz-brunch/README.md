@@ -84,6 +84,14 @@ $ yo maz-brunch:controller "controller_name"
 $ yo maz-brunch:scss-page "scss_name"
 ```
 
+```javascript
+var code = "string";
+
+function foo(){
+  return ["1", "2"];
+}
+```
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
