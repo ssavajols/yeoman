@@ -1,6 +1,6 @@
 # generator-maz-brunch
 
-A generator for [Yeoman](http://yeoman.io). Sample Content.
+A generator for [Yeoman](http://yeoman.io).
 
 ## Before start
 
